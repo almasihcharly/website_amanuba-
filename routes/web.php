@@ -21,9 +21,22 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+// Auth Routes
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+
 Route::get('/rooms', function () {
     return view('pages.rooms');
 })->name('rooms');
+
+Route::get('/rooms/{type}', function ($type) {
+    return view('pages.room-details', ['type' => $type]);
+})->name('rooms.details');
 
 Route::get('/facilities', function () {
     return view('pages.facilities');

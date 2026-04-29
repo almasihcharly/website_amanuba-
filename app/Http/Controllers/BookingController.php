@@ -24,9 +24,7 @@ class BookingController extends Controller
             'phone' => 'required|string|max:20',
             'room_id' => 'required|exists:rooms,id',
             'check_in' => 'required|date|after_or_equal:today',
-            'check_out' => 'required|date|after:check_in',
-            'guests' => 'required|integer|min:1',
-            'special_requests' => 'nullable|string|max:1000',
+            'duration' => 'required|integer|min:1|max:30',
         ]);
 
         if ($validator->fails()) {
@@ -37,25 +35,20 @@ class BookingController extends Controller
 
         $room = Room::findOrFail($request->room_id);
         
-        // Validasi jumlah tamu tidak melebihi kapasitas kamar
-        if ($request->guests > $room->max_guests) {
-            return redirect()->back()
-                ->withErrors(['guests' => "Jumlah tamu tidak boleh melebihi kapasitas kamar (maks {$room->max_guests} tamu)"])
-                ->withInput();
-        }
+        // Hitung tanggal check-out
+        $checkIn = Carbon::parse($request->check_in);
+        $duration = intval($request->duration);
+        $checkOut = $checkIn->copy()->addDays($duration);
 
         // Validasi ketersediaan kamar
-        if (!$room->isAvailableForDates($request->check_in, $request->check_out)) {
+        if (!$room->isAvailableForDates($request->check_in, $checkOut->toDateString())) {
             return redirect()->back()
                 ->withErrors(['room_id' => 'Kamar tidak tersedia untuk tanggal yang dipilih'])
                 ->withInput();
         }
 
         // Hitung total harga
-        $checkIn = Carbon::parse($request->check_in);
-        $checkOut = Carbon::parse($request->check_out);
-        $nights = $checkIn->diffInDays($checkOut);
-        $totalPrice = $room->price * $nights;
+        $totalPrice = $room->price * $duration;
 
         // Buat booking
         $booking = Booking::create([
@@ -64,10 +57,9 @@ class BookingController extends Controller
             'phone' => $request->phone,
             'room_id' => $request->room_id,
             'check_in' => $request->check_in,
-            'check_out' => $request->check_out,
-            'guests' => $request->guests,
+            'check_out' => $checkOut->toDateString(),
+            'guests' => 1, // Default since removed from simple form
             'total_price' => $totalPrice,
-            'special_requests' => $request->special_requests,
             'status' => 'pending',
         ]);
 

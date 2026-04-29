@@ -1,334 +1,186 @@
 @extends('layouts.app')
 
-@section('title', 'Fasilitas')
+@section('title', 'Exclusive Facilities')
 
 @section('content')
-    <!-- Hero Section for Facilities -->
-    <section class="relative h-96 flex items-center justify-center overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1571896349842-33c89423de52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                 alt="Hotel Facilities" 
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89423de52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" 
+                 alt="Luxury Facilities" 
+                 class="w-full h-full object-cover scale-105 animate-slow-zoom">
+            <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
-        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-['Playfair_Display']">Fasilitas Kami</h1>
-            <p class="text-xl md:text-2xl max-w-3xl mx-auto font-light">
-                Semua yang Anda butuhkan untuk masa menginap yang sempurna dalam satu atap
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="text-amber-500 font-bold tracking-[0.3em] uppercase text-sm mb-6 block animate-fade-in">Kemewahan Tanpa Batas</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 font-['Playfair_Display'] leading-tight animate-fade-in-up">
+                Our <span class="italic font-light">Facilities</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto animate-fade-in-up delay-200">
+                Layanan kelas dunia dan fasilitas premium yang dirancang untuk memenuhi setiap kebutuhan Anda.
             </p>
         </div>
     </section>
-    
-    <!-- Facilities Section -->
-    <section class="py-20 bg-gray-50">
+
+    <!-- Main Facilities Grid -->
+    <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4 font-['Playfair_Display']">Fasilitas Premium</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Dari relaksasi hingga rekreasi, kami memiliki semua yang Anda butuhkan untuk pengalaman tak terlupakan
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-gray-900 font-['Playfair_Display'] mb-4">Pengalaman Tak Terlupakan</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
+                    Setiap sudut Amanuba dirancang untuk kenyamanan maksimal Anda, menggabungkan estetika modern dengan keramah-tamahan yang hangat.
                 </p>
             </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Swimming Pool -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1571896349842-33c89423de52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Swimming Pool" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Swimming Pool</h3>
+
+            <div class="space-y-32">
+                <!-- Facility 1: Infinity Pool (Alternating Layout) -->
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="absolute -top-6 -left-6 w-full h-full bg-amber-50 rounded-[2rem] z-0"></div>
+                        <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89423de52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" 
+                                 alt="Infinity Pool" 
+                                 class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110">
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">Olympic-sized pool with stunning city views, perfect for both exercise and relaxation. Open daily from 6 AM to 10 PM.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">6:00 AM - 10:00 PM</span>
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-amber-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Wellness & Recreation</span>
+                        <h3 class="text-4xl font-bold text-gray-900 font-['Playfair_Display'] mb-6">The Infinity Pool</h3>
+                        <p class="text-gray-600 font-light leading-relaxed mb-8 text-lg">
+                            Berenanglah di kolam renang infinity kami yang menakjubkan dengan pemandangan cakrawala kota yang spektakuler. Tempat yang sempurna untuk menyegarkan diri di pagi hari atau bersantai saat matahari terbenam.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">06:00 - 22:00</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Poolside Service</span>
+                            </div>
                         </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Poolside bar service
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Towel service
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Sun loungers
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                
-                <!-- Spa -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Spa" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Spa & Wellness</h3>
+
+                <!-- Facility 2: Fine Dining (Reversed) -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="absolute -top-6 -right-6 w-full h-full bg-amber-50 rounded-[2rem] z-0"></div>
+                        <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" 
+                                 alt="Fine Dining" 
+                                 class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110">
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">Rejuvenate your body and soul with our premium spa treatments and wellness programs. Professional therapists available.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">9:00 AM - 9:00 PM</span>
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-amber-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Culinary Arts</span>
+                        <h3 class="text-4xl font-bold text-gray-900 font-['Playfair_Display'] mb-6">Signature Restaurant</h3>
+                        <p class="text-gray-600 font-light leading-relaxed mb-8 text-lg">
+                            Nikmati simfoni rasa yang disiapkan oleh koki ternama kami. Restoran kami menyajikan perpaduan kuliner lokal dan internasional yang akan memanjakan lidah Anda dalam suasana yang elegan.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">06:30 - 23:00</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Fine Dining</span>
+                            </div>
                         </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Massage therapy
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Sauna & steam room
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Beauty treatments
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                
-                <!-- Restaurant -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Restaurant" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Restaurant</h3>
+
+                <!-- Facility 3: Spa -->
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="absolute -top-6 -left-6 w-full h-full bg-amber-50 rounded-[2rem] z-0"></div>
+                        <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" 
+                                 alt="Spa" 
+                                 class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110">
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">Fine dining restaurant serving international cuisine prepared by our award-winning chefs using fresh, local ingredients.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">6:30 AM - 11:00 PM</span>
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-amber-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Rest & Relaxation</span>
+                        <h3 class="text-4xl font-bold text-gray-900 font-['Playfair_Display'] mb-6">Sanctuary Spa</h3>
+                        <p class="text-gray-600 font-light leading-relaxed mb-8 text-lg">
+                            Manjakan diri Anda dengan perawatan spa holistik kami. Terapis profesional kami akan membantu Anda mencapai ketenangan pikiran dan tubuh yang optimal melalui teknik tradisional dan modern.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">09:00 - 21:00</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Private Therapy</span>
+                            </div>
                         </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                International cuisine
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Live cooking stations
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Wine cellar
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Fitness Center -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Gym" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Fitness Center</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">State-of-the-art fitness center with modern equipment and personal trainers available for your workout needs.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">24/7 Access</span>
-                        </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Cardio equipment
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Weight training
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Yoga studio
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Business Center -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1497366214047-4c0c9ad7d94e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Business Center" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Business Center</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">Fully-equipped business center with meeting rooms, high-speed internet, and secretarial services for business travelers.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">24/7 Access</span>
-                        </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Meeting rooms
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                High-speed WiFi
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Printing services
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Kids Club -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                             alt="Kids Club" 
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-2xl font-bold font-['Playfair_Display']">Kids Club</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">Safe and fun environment for children with supervised activities, games, and educational programs.</p>
-                        <div class="flex items-center text-amber-600 mb-4">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">9:00 AM - 9:00 PM</span>
-                        </div>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Play area
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Educational activities
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Professional staff
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Additional Services -->
-            <div class="mt-16 bg-white rounded-lg shadow-lg p-8">
-                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center font-['Playfair_Display']">Additional Services</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Concierge Service</h4>
-                        <p class="text-gray-600 text-sm">24/7 assistance for all your needs</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">High-Speed WiFi</h4>
-                        <p class="text-gray-600 text-sm">Free throughout the hotel</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">24/7 Security</h4>
-                        <p class="text-gray-600 text-sm">Your safety is our priority</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="bg-amber-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Laundry Service</h4>
-                        <p class="text-gray-600 text-sm">Same-day service available</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Essential Amenities Highlight -->
+    <section class="py-24 bg-[#0f1115] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold font-['Playfair_Display'] mb-16">Layanan Esensial Lainnya</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-500 mx-auto mb-6 border border-amber-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h4 class="font-bold">Business Center</h4>
+                    <p class="text-gray-500 text-sm font-light">Lengkap dengan ruang meeting pribadi & akses internet cepat.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-500 mx-auto mb-6 border border-amber-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h4 class="font-bold">Kids Club</h4>
+                    <p class="text-gray-500 text-sm font-light">Area bermain yang aman dan menyenangkan untuk si kecil.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-500 mx-auto mb-6 border border-amber-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="font-bold">Concierge 24/7</h4>
+                    <p class="text-gray-500 text-sm font-light">Layanan bantuan pribadi untuk segala kebutuhan Anda.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-500 mx-auto mb-6 border border-amber-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="font-bold">Fitness Suite</h4>
+                    <p class="text-gray-500 text-sm font-light">Peralatan modern untuk menjaga kebugaran Anda setiap hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes slow-zoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        .animate-slow-zoom {
+            animation: slow-zoom 20s ease-in-out infinite alternate;
+        }
+    </style>
 @endsection
