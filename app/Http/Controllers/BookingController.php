@@ -10,10 +10,26 @@ use Carbon\Carbon;
 
 class BookingController extends Controller
 {
-    public function create()
+    public function create(Request $request)
     {
         $rooms = Room::where('available', true)->get();
-        return view('pages.booking', compact('rooms'));
+        
+        $selectedRoom = null;
+        if ($request->has('room_id')) {
+            $selectedRoom = $rooms->firstWhere('id', $request->room_id);
+        } elseif ($request->has('room')) {
+            $roomName = str_replace('-', ' ', $request->room);
+            $selectedRoom = $rooms->first(function($room) use ($roomName) {
+                return strtolower($room->name) === strtolower($roomName) || strtolower(str_replace(' Room', '', $room->name)) === strtolower($roomName);
+            });
+        }
+        
+        // Default to first room if none selected
+        if (!$selectedRoom) {
+            $selectedRoom = $rooms->first();
+        }
+
+        return view('pages.booking', compact('rooms', 'selectedRoom'));
     }
 
     public function store(Request $request)
