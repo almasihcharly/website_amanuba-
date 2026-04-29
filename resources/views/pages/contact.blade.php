@@ -45,7 +45,7 @@
                             <div>
                                 <h4 class="text-gray-900 font-bold mb-1 uppercase tracking-widest text-xs">Lokasi Kami</h4>
                                 <p class="text-gray-600 font-light text-lg leading-relaxed">
-                                    Jl. Sudirman No. 123, Kawasan Bisnis,<br>Jakarta Selatan, Indonesia 12190
+                                    Jl. Rancamaya No.37, Bojongkerta,<br>Bogor Selatan, Kota Bogor, Jawa Barat 16139
                                 </p>
                             </div>
                         </div>
@@ -56,8 +56,8 @@
                             </div>
                             <div>
                                 <h4 class="text-gray-900 font-bold mb-1 uppercase tracking-widest text-xs">Telepon</h4>
-                                <p class="text-gray-600 font-light text-lg">+62 (21) 555-0123</p>
-                                <p class="text-gray-600 font-light text-lg">+62 (21) 555-0456</p>
+                                <p class="text-gray-600 font-light text-lg">+62 (251) 8292821</p>
+                                <p class="text-gray-600 font-light text-lg">+62 821 2226 4437 (WA)</p>
                             </div>
                         </div>
 
@@ -67,8 +67,7 @@
                             </div>
                             <div>
                                 <h4 class="text-gray-900 font-bold mb-1 uppercase tracking-widest text-xs">Email</h4>
-                                <p class="text-gray-600 font-light text-lg">reservation@amanuba.com</p>
-                                <p class="text-gray-600 font-light text-lg">info@amanuba.com</p>
+                                <p class="text-gray-600 font-light text-lg">info@amanubarancamaya.com</p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +122,7 @@
     <section class="h-[500px] w-full relative">
         <div class="absolute inset-0 bg-gray-200 animate-pulse" id="map-placeholder"></div>
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2736783853173!2d106.81591967484394!3d-6.227601961131758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f157790b40e7%3A0xc3466f286877990c!2sSudirman%20Central%20Business%20District!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.886026365116!2d106.8407853!3d-6.660505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c97b8e64795b%3A0xc3466f286877990c!2sAmanuba%20Hotel%20%26%20Resort%20Rancamaya!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
             width="100%" 
             height="100%" 
             style="border:0;" 

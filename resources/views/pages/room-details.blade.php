@@ -17,7 +17,7 @@
             'amenities' => ['High-speed WiFi', 'Air Conditioning', 'Flat-screen TV', 'Mini Bar', 'Coffee/Tea Maker', 'Luxury Toiletries']
         ],
         'deluxe' => [
-            'name' => 'Deluxe City View',
+            'name' => 'Deluxe Room',
             'price' => '864.000',
             'size' => '35',
             'guests' => '3',
@@ -30,61 +30,19 @@
             ],
             'amenities' => ['City View', 'Work Desk', 'King Bed', 'Rain Shower', 'Safety Box', 'Robes & Slippers']
         ],
-        'executive' => [
-            'name' => 'Executive Suite',
+        'suite' => [
+            'name' => 'Suite Room',
             'price' => '1.430.000',
             'size' => '55',
             'guests' => '4',
             'bed' => 'King Bed + Sofa Bed',
-            'description' => 'Didesain untuk eksekutif modern, Executive Suite kami menyediakan ruang tamu terpisah yang luas, ideal untuk menjamu tamu atau sekadar bersantai dalam privasi. Kemewahan bertemu fungsionalitas dengan perabotan kelas atas dan akses ke layanan eksklusif kami.',
+            'description' => 'Didesain untuk eksekutif modern, Suite Room kami menyediakan ruang tamu terpisah yang luas, ideal untuk menjamu tamu atau sekadar bersantai dalam privasi. Kemewahan bertemu fungsionalitas dengan perabotan kelas atas dan akses ke layanan eksklusif kami.',
             'images' => [
                 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
                 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
                 'https://images.unsplash.com/photo-1590490359683-658d3d23f972?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
             ],
             'amenities' => ['Separate Living Area', 'Butler Service', 'Nespresso Machine', 'Premium Sound System', 'Evening Turndown', 'Pillow Menu']
-        ],
-        'presidential' => [
-            'name' => 'Presidential Suite',
-            'price' => '3.500.000',
-            'size' => '120',
-            'guests' => '6',
-            'bed' => '2 King Bedrooms',
-            'description' => 'Puncak kemewahan di Amanuba. Presidential Suite kami menawarkan kemegahan tanpa tanding dengan ruang tamu yang sangat luas, ruang makan pribadi, dan dua kamar tidur mewah. Setiap detail telah dirancang dengan cermat untuk memberikan pengalaman tinggal yang paling eksklusif dan prestisius.',
-            'images' => [
-                'https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1578683010236-d716f9a3f2c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
-            ],
-            'amenities' => ['Private Pool', 'Kitchenette', 'Private Elevator', 'Luxury Bathroom', 'Walk-in Closet', '24h Personal Butler']
-        ],
-        'family' => [
-            'name' => 'Family Ocean View',
-            'price' => '1.200.000',
-            'size' => '65',
-            'guests' => '5',
-            'bed' => '2 Queen Beds',
-            'description' => 'Pilihan ideal untuk liburan keluarga. Kamar ini menawarkan ruang yang sangat lega dengan pemandangan laut yang menyegarkan. Dilengkapi dengan fasilitas ramah anak dan area yang dirancang khusus untuk kenyamanan seluruh anggota keluarga, memastikan momen berharga Anda tetap nyaman.',
-            'images' => [
-                'https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1505691938895-1758d7eaa511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1512918766671-ad650b9b732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
-            ],
-            'amenities' => ['Ocean View', 'Connecting Rooms', 'Kids Area', 'Dining Table', 'Welcome Treats', 'Extra Crib Available']
-        ],
-        'honeymoon' => [
-            'name' => 'Honeymoon Suite',
-            'price' => '1.850.000',
-            'size' => '45',
-            'guests' => '2',
-            'bed' => 'King Bed',
-            'description' => 'Rayakan cinta Anda dalam suasana yang paling romantis. Honeymoon Suite kami dirancang khusus dengan sentuhan intim, dekorasi bunga segar, dan balkon pribadi untuk menikmati sunset. Kemewahan jacuzzi dan layanan khusus akan membuat awal perjalanan baru Anda menjadi sangat istimewa.',
-            'images' => [
-                'https://images.unsplash.com/photo-1520250498154-50f9eca3e533?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
-                'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
-            ],
-            'amenities' => ['Private Jacuzzi', 'Sunset Balcony', 'Romantic Setup', 'Champagne on Arrival', 'Couples Spa Access', 'Breakfast in Bed']
         ]
     ];
 
@@ -95,7 +53,7 @@
 
 @section('content')
     <!-- Room Detail Hero / Gallery -->
-    <section class="pt-24 pb-12 bg-white">
+    <section class="pt-32 pb-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
@@ -136,6 +94,10 @@
                 <!-- Left: Description & Amenities -->
                 <div class="lg:col-span-8 space-y-12">
                     <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-px bg-amber-500"></div>
+                            <span class="text-amber-600 font-bold tracking-widest uppercase text-xs">Pengalaman Menginap</span>
+                        </div>
                         <h2 class="text-3xl font-bold text-gray-900 font-['Playfair_Display']">Deskripsi Kamar</h2>
                         <p class="text-gray-600 text-lg font-light leading-relaxed">
                             {{ $room['description'] }}
@@ -220,8 +182,8 @@
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-900 font-['Playfair_Display'] mb-12">Pilihan Kamar Lainnya</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                @foreach(collect($rooms)->except($type)->shuffle()->take(3) as $slug => $otherRoom)
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                @foreach(collect($rooms)->except($type)->shuffle()->take(2) as $slug => $otherRoom)
                     <a href="{{ route('rooms.details', $slug) }}" class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full">
                         <div class="relative h-64 overflow-hidden">
                             <img src="{{ $otherRoom['images'][0] }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">

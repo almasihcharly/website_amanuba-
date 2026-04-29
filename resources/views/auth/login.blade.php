@@ -59,27 +59,7 @@
                 </button>
             </form>
             
-            <div class="mt-8">
-                <div class="relative">
-                    <div class="absolute inset-0 flex items-center">
-                        <div class="w-full border-t border-gray-200"></div>
-                    </div>
-                    <div class="relative flex justify-center text-sm">
-                        <span class="bg-white px-4 text-gray-500">Atau lanjutkan dengan</span>
-                    </div>
-                </div>
-                
-                <div class="mt-6 grid grid-cols-2 gap-4">
-                    <button type="button" class="flex w-full items-center justify-center rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors shadow-sm">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="h-5 w-5 mr-2" alt="Google">
-                        Google
-                    </button>
-                    <button type="button" class="flex w-full items-center justify-center rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors shadow-sm">
-                        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" class="h-5 w-5 mr-2" alt="Facebook">
-                        Facebook
-                    </button>
-                </div>
-            </div>
+            </form>
             
             <p class="mt-8 text-center text-sm text-gray-600">
                 Belum memiliki akun?

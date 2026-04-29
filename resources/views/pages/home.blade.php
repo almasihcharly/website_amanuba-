@@ -118,7 +118,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Room Card 1 -->
+                <!-- Room Card 1: Superior -->
                 <div class="group cursor-pointer bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow duration-300">
                     <div class="relative overflow-hidden rounded-xl aspect-[4/3] mb-6">
                         <img src="https://images.unsplash.com/photo-1611892440507-42c791c244f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="Superior Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
@@ -130,14 +130,14 @@
                         <h3 class="text-2xl font-bold text-gray-900 mb-2 font-['Playfair_Display'] group-hover:text-amber-600 transition-colors">Superior Room</h3>
                         <p class="text-gray-500 font-light mb-4 line-clamp-2">Kamar nyaman dengan fasilitas lengkap, sempurna untuk liburan singkat maupun perjalanan bisnis Anda.</p>
                         <div class="flex items-center space-x-4 text-sm text-gray-400 mb-4 border-b border-gray-100 pb-4">
-                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 32m²</span>
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 25m²</span>
                             <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg> 2 Orang</span>
                         </div>
-                        <a href="{{ route('booking.create') ?? '/booking' }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Pesan Sekarang &rarr;</a>
+                        <a href="{{ route('rooms.details', 'superior') }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Lihat Detail &rarr;</a>
                     </div>
                 </div>
                 
-                <!-- Room Card 2 -->
+                <!-- Room Card 2: Deluxe -->
                 <div class="group cursor-pointer bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow duration-300">
                     <div class="relative overflow-hidden rounded-xl aspect-[4/3] mb-6">
                         <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="Deluxe Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
@@ -146,17 +146,17 @@
                         </div>
                     </div>
                     <div class="px-2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2 font-['Playfair_Display'] group-hover:text-amber-600 transition-colors">Deluxe Premium</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 font-['Playfair_Display'] group-hover:text-amber-600 transition-colors">Deluxe Room</h3>
                         <p class="text-gray-500 font-light mb-4 line-clamp-2">Ruang yang lebih luas dengan pemandangan kota spektakuler dan fasilitas kamar mandi mewah.</p>
                         <div class="flex items-center space-x-4 text-sm text-gray-400 mb-4 border-b border-gray-100 pb-4">
-                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 45m²</span>
-                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg> 2 Orang</span>
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 35m²</span>
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg> 3 Orang</span>
                         </div>
-                        <a href="{{ route('booking.create') ?? '/booking' }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Pesan Sekarang &rarr;</a>
+                        <a href="{{ route('rooms.details', 'deluxe') }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Lihat Detail &rarr;</a>
                     </div>
                 </div>
                 
-                <!-- Room Card 3 -->
+                <!-- Room Card 3: Suite -->
                 <div class="group cursor-pointer hidden lg:block bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow duration-300">
                     <div class="relative overflow-hidden rounded-xl aspect-[4/3] mb-6">
                         <img src="https://images.unsplash.com/photo-1564013799919-600d0b5a107b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="Suite Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
@@ -165,13 +165,13 @@
                         </div>
                     </div>
                     <div class="px-2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2 font-['Playfair_Display'] group-hover:text-amber-600 transition-colors">Executive Suite</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 font-['Playfair_Display'] group-hover:text-amber-600 transition-colors">Suite Room</h3>
                         <p class="text-gray-500 font-light mb-4 line-clamp-2">Pengalaman tak tertandingi dengan ruang tamu terpisah, layanan butler pribadi, dan interior mahakarya.</p>
                         <div class="flex items-center space-x-4 text-sm text-gray-400 mb-4 border-b border-gray-100 pb-4">
-                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 80m²</span>
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg> 55m²</span>
                             <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg> 4 Orang</span>
                         </div>
-                        <a href="{{ route('booking.create') ?? '/booking' }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Pesan Sekarang &rarr;</a>
+                        <a href="{{ route('rooms.details', 'suite') }}" class="block text-center font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">Lihat Detail &rarr;</a>
                     </div>
                 </div>
             </div>

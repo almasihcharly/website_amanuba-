@@ -45,6 +45,10 @@
                     <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Alamat Email</label>
                     <input id="email" name="email" type="email" required class="block w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 focus:border-amber-500 focus:ring-amber-500 sm:text-sm transition-all bg-gray-50 focus:bg-white" placeholder="nama@email.com">
                 </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Nomor Telepon</label>
+                    <input id="phone" name="phone" type="tel" required class="block w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 focus:border-amber-500 focus:ring-amber-500 sm:text-sm transition-all bg-gray-50 focus:bg-white" placeholder="0812xxxx">
+                </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Kata Sandi</label>
